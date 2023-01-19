@@ -1,0 +1,28 @@
+{
+  "name": "aws-s3-file-service",
+  "version": "1.0.0",
+  "description": "service to handle files in AWS S3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanc1998/aws-s3-service.git"
+  },
+  "keywords": [
+    "aws",
+    "S3",
+    "file"
+  ],
+  "author": "@yanc1998",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanc1998/aws-s3-service/issues"
+  },
+  "homepage": "https://github.com/yanc1998/aws-s3-service#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.252.0",
+    "uuid": "^9.0.0"
+  }
+}
