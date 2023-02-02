@@ -59,17 +59,19 @@ module.exports = class AWS_S3_Service {
 
     // fileName: name of file
     async delete(fileName) {
+        const Key = `${this.folder}${fileName}`;
         const command = new DeleteObjectCommand({
             Bucket: this.bucket,
-            Key: `${fileName}`,
+            Key: Key,
         });
         return this.client.send(command);
     }
 
     async get(fileName) {
+        const Key = `${this.folder}${fileName}`;
         const command = new GetObjectCommand({
             Bucket: this.bucket,
-            Key: fileName,
+            Key: Key,
         });
         const response = await this.client.send(command);
         return response;
